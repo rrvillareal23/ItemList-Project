@@ -1,19 +1,31 @@
-# ItemList Test Program
+# ItemList Test Program with Makefile
 
-This C program tests the functionality of a simple item list (ItemList) using various operations such as adding, removing, and checking for the presence of items.
+This C program, along with a Makefile, tests the functionality of a simple item list (ItemList) using various operations such as adding, removing, and checking for the presence of items.
 
 ## How to Use
 
-1. Include the necessary header files and compile the program.
+1. Compile the program using the provided Makefile.
 
-```bash
-gcc main.c ItemList.c -o item_list_test
+```bash```
+make
 
-Run the compiled executable.
-./item_list_test
+1. Run the compiled executable.
+./Exercise6_2
 
-Notes
-The program initializes an ItemList and performs various operations on it to test its functionality.
-The ItemList structure represents a simple list of items with a maximum size defined by MAX_ITEM_LIST.
-Test results are displayed in the console output.
+1. The program will perform several tests on the ItemList and output the results.
+2. To clean up compiled files, use:
+make clean
+
+## Makefile
+## CFLAGS
+
+-Wall: Enable most compiler warnings.
+-g: Include debugging information.
+Targets
+all: Builds the executable using the specified source files and flags.
+clean: Removes compiled object files and the executable.
+.c.o: A rule to compile C source files into object files.
+Code Structure
+Refer to the previous README for details on the code structure and usage.
+
 Feel free to use, modify, and share this code as needed!
